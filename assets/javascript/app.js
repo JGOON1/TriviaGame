@@ -149,7 +149,7 @@ $(document).ready(function(){
             imagesHere = questions[nextQuestion][6];
             answerText = questions[nextQuestion][7];
             $("#choices").hide();
-            $("#question").html("<h1> Yes, sir!" + answerText + "</h1>");
+            $("#question").html("<h1> Nice!" + answerText + "</h1>");
             $("#images").show().html(imagesHere);
     
             nextQuestion++;// adding 1 so that we can move on to the next question in the array at the top
@@ -215,7 +215,33 @@ $(document).ready(function(){
                 $("#start").show();
             }
         }
-
+        //function to stop the setInterval's timing
+        function stop() {
+            clearInterval(intervalId);
+        }
+        // game over function that will tell you your scores and another button that will restart the game
+        function gameOver() {
+            $("#question, #choices").show();
+            $("#start").show();
+    
+            restarting = false;
+            $("#question").html("<h1> This is how you did. You got</h1>");
+            $("#final").show().html("<h2> Correct Answers: " + correct + "</h2>").append("<h2> Incorrect Answers: " + incorrect + "</h2>");
+            $("#choices").hide();
+            $("#start").html("<h1> Start Over? </h1>");
+        }
+        // zero-ing on all the variables so that we can start the game over BUT not resetting.
+        function restart() {
+            $("#final").hide();
+            nextQuestion = 0, correct = 0, incorrect = 0, number = 30;
+            answerVar = questions[nextQuestion][5];
+    
+            $("#question").html("<h3>" + questions[nextQuestion][0] + "</h3>");
+            $("#a").html("<h4 value='a'>" + questions[nextQuestion][1] + "</h4>");
+            $("#b").html("<h4 value='b'>" + questions[nextQuestion][2] + "</h4>");
+            $("#c").html("<h4 value='c'>" + questions[nextQuestion][3] + "</h4>");
+            $("#d").html("<h4 value='d'>" + questions[nextQuestion][4] + "</h4>");
+        }
 
 
 
