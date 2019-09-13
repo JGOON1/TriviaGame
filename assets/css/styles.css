@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+
+};
+
+.grad1{
+    font-size: 60px;
+}
+
+
+.hud{
+    border: solid 1px;
+    background: peachpuff;
+    position: relative;
+
+}
+img{
+    width: 40%;
+}
