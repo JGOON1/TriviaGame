@@ -1,3 +1,8 @@
-# TriviaGame
-Trivia Game is made by using javascript and jquery to select correct answers and moving onto the next question.
-Also adding a countdown timer using jquery is to be incorporated with the game.
+Project Title
+Pokemon Trivia Game
+
+Getting Started
+Click the github link to get started on the trivia game
+
+Technologies
+Javascript and jQuery was used to build the the game.
