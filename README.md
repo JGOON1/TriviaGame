@@ -1,8 +1,8 @@
-#Project Title
+# Project Title
 Pokemon Trivia Game
 
-#Getting Started
+# Getting Started
 Click the github link to get started on the trivia game
 
-#Technologies
+# Technologies
 Javascript and jQuery was used to build the the game.
